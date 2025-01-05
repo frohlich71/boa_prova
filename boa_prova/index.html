@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagem de Amor</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec;
+    }
+    .container {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: 22rem;
+      width: 22rem;
+      display: none;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="message">Boas provas meu amor</h1>
+    <img id="image" src="./foto.jpg" alt="Imagem de amor">
+    <p id="loveMessage" class="hidden">Conta comigo pra tudo, sempre</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('message').classList.add('hidden');
+      document.getElementById('image').style.display = 'block';
+      document.getElementById('loveMessage').classList.remove('hidden');
+    }, 2000);
+  </script>
+</body>
+</html>
